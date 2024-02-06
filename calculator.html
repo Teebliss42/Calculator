@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/9fbb34f9c3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="upper">
+            <div class="left">
+                <img src="./calculator-removebg-preview (1).png" alt="">
+                <p>Calculator</p>
+            </div>
+            <div class="side">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-square"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="standard">
+            <div class="left">
+                <i class="fa-solid fa-bars"></i>
+                <p>Standard</p>
+            </div>
+            <div class="side">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
+        </div>
+        <div class="input-1"><p id="input1"></p></div>
+        <div class="input-2"><p id="input2"></p></div>
+        <div class="memory">
+            <p>MC</p>
+            <p>MR</p>
+            <p>M+</p>
+            <p>M-</p>
+            <p>MS</p>
+            <p>M<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+        <div class="btn-1">
+            <button onclick="percentage()">%</button>
+            <button onclick="clearIt()">CE</button>
+            <button onclick="clearIt()">C</button>
+            <button onclick="deleteIt()"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div class="btn-2">
+            <button onclick="reciprocal()">1/x</button>
+            <button onclick="squareIt()">x<sup>2</sup></button>
+            <button onclick="squareRoot()"><sup>2</sup>&#8730;X</button>
+            <button onclick="operators('/')">&divide</button>
+        </div>
+        <div class="btn-2">
+            <button class="btn" onclick="numbers(7)">7</button>
+            <button class="btn" onclick="numbers(8)">8</button>
+            <button class="btn" onclick="numbers(9)">9</button>
+            <button onclick="operators('*')">&times;</button>
+        </div>
+        <div class="btn-2">
+            <button class="btn" onclick="numbers(4)">4</button>
+            <button class="btn" onclick="numbers(5)">5</button>
+            <button class="btn" onclick="numbers(6)">6</button>
+            <button onclick="operators('-')">-</button>
+        </div>
+        <div class="btn-2">
+            <button class="btn" onclick="numbers(1)">1</button>
+            <button class="btn" onclick="numbers(2)">2</button>
+            <button class="btn" onclick="numbers(3)">3</button>
+            <button class="btn" onclick="operators('+')">+</button>
+        </div>
+        <div class="btn-2">
+            <button onclick="negative()">+/-</button>
+            <button class="btn" onclick="numbers(0)">0</button>
+            <button onclick="numbers('.')">.</button>
+            <button onclick="equals()" style="background-color: lightblue;">=</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="calc.js"></script>
